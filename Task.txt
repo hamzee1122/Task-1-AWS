@@ -1,0 +1,31 @@
+--- FIX "git is not recognized" ERROR ---
+
+1. Check if Git is installed:
+   Open Command Prompt and run:
+   git --version
+
+   - If you see "git is not recognized", Git is either not installed or not in PATH.
+
+2. Install Git (if not installed):
+   - Download from: https://git-scm.com/downloads
+   - Run the installer.
+   - During installation, select "Add Git to PATH".
+   - After installation, open Command Prompt and run:
+     git --version
+
+3. If Git is already installed but not working:
+   - Open Windows Search → type: Environment Variables → select "Edit the system environment variables".
+   - In System Properties → Environment Variables.
+   - Under System Variables, find "Path" → Edit.
+   - Add the following paths (adjust if Git is in another folder):
+        C:\Program Files\Git\bin
+        C:\Program Files\Git\cmd
+   - Click OK → restart Command Prompt.
+
+4. Verify installation:
+   Run in Command Prompt:
+   git --version
+   You should see something like: git version 2.x.x
+
+Tip: You can also use Git Bash (installed with Git) for Linux-style commands.
+
